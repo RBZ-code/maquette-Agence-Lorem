@@ -1,0 +1,368 @@
+
+*,
+:before,
+:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: var(--color-main);
+}
+
+:root {
+  --color-main: #343a40;
+  --border-color-nav: #ffffff;
+}
+
+/* Retire l'effet d'agrandissement au focus */
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#logo {
+  font-family: "Lobster Two", sans-serif;
+  font-style: italic;
+  font-size: 32px;
+}
+
+.navbar.small .navbar-nav .nav-link {
+  font-size: 14px !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+.navbar {
+  background-color: var(--color-main) !important;
+  opacity: 1;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar.small {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/************************************image-section*****************************/
+
+.image-section {
+  background-image: url("src/bgphotshop.png");
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+  border-bottom: 1px solid var(--color-main);
+}
+.image-section h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.image-section h1 {
+  font-size: 8rem;
+  margin-bottom: 10px;
+  font-family: "Lobster Two", sans-serif;
+  font-style: italic;
+  font-weight: 550;
+}
+.image-section__btn {
+  background-color: var(--color-main) !important;
+  color: white !important;
+}
+.image-section__btn:hover {
+  border: 1px solid var(--color-main) !important;
+  background-color: transparent !important;
+  color: var(--color-main) !important;
+}
+.image-section .btn-outline-secondary:hover {
+  background-color: var(--color-main) !important;
+}
+
+/************************************image-a-propos*****************************/
+
+.section-a-propos {
+  display: flex;
+  justify-content: center;
+  padding: 10%;
+}
+.my-6 {
+  margin-top: 70px !important;
+  margin-bottom: 70px;
+}
+
+/********************Agencement fleche accordéon********************/
+.section-a-propos {
+  border-bottom: 1px dotted var(--color-main);
+}
+.section-a-propos__titre {
+  border-bottom: 1px solid var(--color-main);
+  padding: 15px 0;
+}
+.section-a-propos p {
+  margin-top: 15px;
+}
+.accordion-header {
+  --bs-accordion-active-bg: #f7f7f7;
+  --bs-accordion-btn-bg: #f7f7f7;
+}
+
+.accordion-item .accordion-button.collapsed {
+  display: flex;
+}
+.accordion-item .accordion-button.collapsed::after {
+  order: -1;
+  margin-left: 10px; 
+  margin-right: 10px;
+  rotate: -90deg;
+}
+
+.accordion-item .accordion-button:not(.collapsed) {
+  display: flex;
+}
+.accordion-item .accordion-button:not(.collapsed)::after {
+  order: -1;
+  margin-left: 10px; 
+  margin-right: 10px;
+  rotate: 180deg;
+}
+
+/************************************section-infos*****************************/
+.section-infos{
+  padding: 10%;
+}
+.info-item_title {
+  margin-bottom: 15px;
+}
+.logo {
+  max-width: 25px;
+  max-height: auto;
+  margin-right: 5px;
+}
+
+/************************************section-banniere1*****************************/
+
+.banniere-1 {
+  background-image: url(src/banniere1.png);
+  background-attachment: fixed;
+}
+
+.banniere-1 p {
+  font-size: 10px;
+}
+.galerie{
+  padding: 10%;
+}
+
+/************************************section-galerie*****************************/
+.galerie__div img {
+  background-color: var(--color-main);
+}
+
+.galerie h2 {
+  font-size: 4rem;
+  font-family: "Lobster Two", sans-serif;
+  font-style: italic;
+}
+.galerie__div {
+  margin-bottom: 80px;
+    }
+
+/************************************section-banniere2*****************************/
+
+.banniere2 {
+  background-image: url(src/Banniere2.png);
+  background-attachment: fixed;
+}
+
+.carousel-item p {
+  font-size: 2rem;
+  padding: 70px 0;
+}
+
+/************************************section-nos-offres*****************************/
+
+.Nos-Offres h2 {
+  font-size: 4rem;
+  padding: 60px 0;
+  font-family: "Lobster Two", sans-serif;
+  font-style: italic;
+  border-bottom: 1px solid var(--color-main);
+}
+.Nos-Offres h3 {
+  font-family: "Lobster Two", sans-serif;
+  font-style: italic;
+}
+
+.Nos-Offres {
+  border-bottom: 1px dotted var(--color-main);
+}
+.Nos-Offres span {
+  font-size: 12px;
+}
+
+.Nos-Offres .container {
+  padding-top: 60px;
+  padding-bottom: 100px;
+  margin: auto;
+}
+.card-img-top {
+  height: 250px;
+  background-image: url(src/Bcg_card.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-img-top__h3-top {
+  color: white;
+}
+
+.Nos-Offres .card {
+  max-width: 280px;
+  height: 550px;
+  padding-left: 0;
+  padding-right: 0;
+  box-shadow: -5px 0px 30px var(--color-main), 5px 10px 30px var(--color-main);
+  border: 0px;
+}
+.card:hover {
+  transform: scale(1.05);
+  transition-duration: .8s ;
+}
+.Nos-Offres .row {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+.btn-custom-card {
+  text-decoration: none;
+  color: #8cd9ff;
+  padding: 5px 20px;
+  border: 1px solid #8cd9ff;
+  border-radius: 15px;
+}
+.btn-custom-card:hover {
+  background-color: #8cd9ff;
+  color: white;
+}
+.nos-offres-div{
+  width: 100%;
+}
+
+/************************************Comptétences*****************************/
+
+.competence h3 {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-main);
+}
+
+.competence p {
+  margin-bottom: 0px;
+}
+
+.competence {
+  padding: 10%;
+  border-bottom: 1px dotted var(--color-main);
+}
+
+/************************************Marques*****************************/
+
+.marque {
+  padding: 80px 0;
+  border-bottom: 1px solid var(--color-main);
+}
+
+/************************************Fomulaires*****************************/
+
+.formulaire {
+  padding: 50px 0;
+}
+.formulaire .container {
+  background-color: #f8f9fa;
+  padding: 25px 30px;
+  padding-bottom: 40px;
+}
+.formulaire .btn-primary {
+  width: 100%;
+}
+
+/************************************Copyright*****************************/
+footer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.copyright {
+  background-color: #f8f9fa;
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+  .image-section h1 {
+    font-size: 5rem;
+  }
+  .image-section h2 {
+    font-size: 3rem;
+  }
+  .navbar {
+    transition: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image-section h1 {
+    font-size: 4rem;
+  }
+  .image-section h2 {
+    font-size: 2rem;
+  }
+  .image-section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  .image-section .container button {
+    margin-top: 10px; 
+  }
+  .image-section .btn-outline-secondary{
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 442px) {
+  .image-section h1 {
+    font-size: 3rem;
+  }
+  .image-section h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .formulaire .btn-primary {
+    margin-top: 20px;
+  }
+  .formulaire h3 {
+    margin-bottom: 20px;
+  }
+  .formulaire p {
+    margin-bottom: 20px;
+  }
+}
+
+
